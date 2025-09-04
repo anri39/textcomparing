@@ -13,8 +13,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 0px;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .textarea-wrapper {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 30px;
+    min-height: 400px;
+  }
+
+  .inputbox {
+    flex: 1;
+  }
+
+  .swap-icon {
+    align-self: center;
+    flex-shrink: 0;
+    transform: rotate(90deg);
+  }
 }
 
 .inputbox {
@@ -48,17 +67,17 @@
 }
 
 .comparebtn {
-  background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+  background: #4571e4;
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 16px 32px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   font-family: "Sylfaen", "DejaVu Sans", sans-serif;
   cursor: pointer;
   letter-spacing: 0.5px;
   align-self: center;
   min-width: 150px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
