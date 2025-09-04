@@ -8,7 +8,7 @@ export default function LanguageSelection() {
 
   const languages = [
     { value: "ქართული", label: "ქართული" },
-    { value: "English", label: "English" },
+    { value: "ქართული", label: "ქართული" },
   ];
 
   const handleLanguageSelect = (language: string) => {
