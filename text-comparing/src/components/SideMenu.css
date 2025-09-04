@@ -1,0 +1,153 @@
+.sidemenu {
+  background: #132450;
+  width: 320px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Sylfaen", "DejaVu Sans", sans-serif;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidemenu__logo {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 2rem;
+  background: #132450;
+}
+
+.sidemenu__logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
+
+.sidemenu__logo h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+.sidemenu__menu {
+  flex: 1;
+  padding: 10px 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidemenu__menu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 0;
+  margin: 2px 0;
+  position: relative;
+}
+
+.sidemenu__menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidemenu__menu-item:nth-child(2) {
+  background: #ffffff;
+  color: #132450;
+  font-weight: 600;
+}
+
+.sidemenu__menu-item:nth-child(2)::before { content: none; }
+
+.sidemenu__menu-item:nth-child(2) > * {
+  position: relative;
+  z-index: 2;
+}
+
+.sidemenu__menu-item:nth-child(2) p {
+  color: #132450;
+}
+
+.sidemenu__menu-item:nth-child(2) img {
+  filter: none;
+}
+
+.sidemenu__menu-item:nth-child(2) svg {
+  color: #132450;
+}
+
+.sidemenu__menu-item:nth-child(2):hover { background: #ffffff; }
+
+.sidemenu__menu-item img {
+  width: 25px;
+  height: 25px;
+  opacity: 0.9;
+  filter: brightness(0) invert(1);
+}
+
+.sidemenu__menu-item svg {
+  width: 20px;
+  height: 20px;
+  opacity: 0.9;
+  color: white;
+}
+
+.sidemenu__menu-item p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: white;
+  line-height: 1.4;
+}
+
+.sidemenu__bottom {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #132450;
+  margin-top: auto;
+}
+
+.sidemenu__bottom img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidemenu__bottom p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  flex: 1;
+  color: white;
+}
+
+.sidemenu__bottom svg {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  color: white;
+}
+
+.sidemenu__bottom svg:hover {
+  opacity: 1;
+}
+
+.sidemenu__bottom .fullname {
+  font-size: 16px !important;
+}
