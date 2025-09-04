@@ -1,0 +1,75 @@
+.language-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 12px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ededed;
+}
+
+.language-selection select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: white;
+  outline: none;
+}
+
+.language-selection .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: #383a48;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 12px;
+}
+
+.language-selection input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+}
+
+.language-selection input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid #383a48;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.language-selection .add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 14px;
+  font-size: 17px;
+  font-weight: 200;
+  color: white;
+  background-color: #383a4899;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: "Sylfaen", "DejaVu Sans", sans-serif;
+  letter-spacing: 0.3px;
+  margin-bottom: 5px;
+}
