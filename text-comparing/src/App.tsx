@@ -2,6 +2,7 @@ import "./App.css";
 import FirstPartDropdown from "./components/FirstPartDropdown";
 import LanguageSelection from "./components/LanguageSelection";
 import NavBar from "./components/NavBar";
+import InputBoxes from "./components/InputBoxes";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <NavBar />
       <FirstPartDropdown />
       <LanguageSelection />
+      <InputBoxes />
     </>
   );
 }
