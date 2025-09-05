@@ -1,0 +1,88 @@
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-container {
+  background: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 16px;
+  padding: 24px 32px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  width: 90%;
+}
+
+.loading-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.decorative-circle {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border: 3px solid #4571E4;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-dot {
+  width: 8px;
+  height: 8px;
+  background: #4571E4;
+  border-radius: 50%;
+}
+
+.loading-message {
+  color: #383A4899;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  flex: 1;
+  letter-spacing: 0.3px;
+}
+
+.progress-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.progress-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-width: 45px;
+  letter-spacing: 0.5px;
+}
+
+.progress-bar-container {
+  flex: 1;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #4571E4;
+  border-radius: 4px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -189,11 +189,22 @@
   font-size: 17px;
   font-weight: 200;
   color: white;
-  background-color: #383a4899;
+  background-color: #4571E4;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-family: "Sylfaen", "DejaVu Sans", sans-serif;
   letter-spacing: 0.3px;
   margin-bottom: 5px;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.language-selection .add-btn:hover:not(:disabled) {
+  background-color: #3461d1;
+}
+
+.language-selection .add-btn:disabled {
+  opacity: 1;
+  cursor: not-allowed;
+  background-color: #383a4899;
 }

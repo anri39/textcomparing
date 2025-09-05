@@ -2,7 +2,12 @@ import { PlusCircle, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import "./LanguageSelection.css";
 
-export default function LanguageSelection() {
+interface LanguageSelectionProps {
+  hasCompared: boolean;
+  onReset: () => void;
+}
+
+export default function LanguageSelection({ hasCompared, onReset }: LanguageSelectionProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("ქართული");
 
@@ -55,7 +60,16 @@ export default function LanguageSelection() {
         ფორმატის შენარჩუნება
       </label>
 
-      <button className="add-btn">
+      <button 
+        className="add-btn" 
+        disabled={!hasCompared}
+        onClick={() => {
+          onReset();
+          if ((window as any).resetInputBoxes) {
+            (window as any).resetInputBoxes();
+          }
+        }}
+      >
         <PlusCircle size={25} />
         ახლის გახსნა
       </button>

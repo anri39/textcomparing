@@ -41,7 +41,7 @@
   min-height: 280px;
   height: auto;
   padding: 20px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Sylfaen", "DejaVu Sans", sans-serif;
   line-height: 1.6;
   font-weight: 500;
@@ -80,12 +80,27 @@
   align-self: center;
   min-width: 150px;
   margin-top: 20px;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.comparebtn:hover:not(:disabled) {
+  background: #3461d1;
+}
+
+.comparebtn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .inputbox.diff-view {
   min-height: 280px;
   padding: 20px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Sylfaen", "DejaVu Sans", sans-serif;
   line-height: 1.6;
   font-weight: 500;
