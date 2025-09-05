@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { diffWords } from "diff";
 import type { Change } from "diff";
 import "./InputBoxes.css";
-import updownArrow from "../assets/arrow.svg";
+import updownarrow from "../assets/Arrow.svg";
 import LoadingComponent from "./LoadingComponent";
 import { RotateCcw } from "lucide-react";
 
@@ -77,7 +77,7 @@ export default function InputBoxes({ onComparisonDone }: InputBoxesProps) {
           />
         )}
 
-        <img src={updownArrow} alt="swap texts" className="swap-icon" />
+        <img src={updownarrow} alt="swap texts" className="swap-icon" />
 
         {diffResult ? (
           <div className="inputbox diff-view">
