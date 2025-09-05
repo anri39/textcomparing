@@ -166,7 +166,7 @@
   font-size: 18px !important;
 }
 
-/* Hide sidebar below 1200px */
+
 @media (max-width: 1199px) {
   .sidemenu {
     display: none !important;
