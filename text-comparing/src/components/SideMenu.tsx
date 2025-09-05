@@ -1,13 +1,19 @@
 import "./SideMenu.css";
-import { Mic, AudioLines, FileText, Check, MoreHorizontal } from "lucide-react";
+import {
+  Mic,
+  AudioLines,
+  FileText,
+  Check,
+  MoreHorizontal,
+  ChevronsLeft,
+} from "lucide-react";
 import mainlogo from "../assets/mainlogo.svg";
 import Aa from "../assets/Group.svg";
 import ProfilePic from "../assets/profile.svg";
-
 const menuItems = [
   { id: 1, label: "მართლმწერი", icon: Check },
   { id: 2, label: "ტექსტის შედარება", icon: Aa, isImage: true },
-  { id: 3, label: "ხმა → ტესტი", icon: Mic },
+  { id: 3, label: "ხმა → ტექსტი", icon: Mic },
   { id: 4, label: "ტექსტი → ხმა", icon: AudioLines },
   { id: 5, label: "PDF კონვერტაცია", icon: FileText },
 ];
@@ -20,6 +26,10 @@ export default function SideMenu() {
         background: "#132450",
       }}
     >
+      <div className="sidemenu__back-arrow">
+        <ChevronsLeft size={35} style={{ color: "#FFFFFF80" }} />
+      </div>
+
       <div className="sidemenu__logo">
         <img src={mainlogo} alt="Logo" />
         <h1>ENAGRAM</h1>

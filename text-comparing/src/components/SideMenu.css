@@ -11,6 +11,17 @@
   top: 0;
   z-index: 9999;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+}
+
+.sidemenu__back-arrow {
+  padding: 30px 15px 10px 20px;
+  margin-right: 27px;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .sidemenu__logo {
@@ -18,8 +29,10 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 2rem;
   background: #132450;
+  margin-top: -10px;
+  margin-bottom: 1rem;
+  margin-left: 10px;
 }
 
 .sidemenu__logo img {
@@ -29,28 +42,27 @@
 }
 
 .sidemenu__logo h1 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
   letter-spacing: 1px;
   color: white;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   letter-spacing: 1px;
 }
 
 .sidemenu__menu {
   flex: 1;
-  padding: 10px 0;
+  padding: 10px 15px;
   overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .sidemenu__menu-item {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   padding: 15px 20px;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -59,17 +71,20 @@
   position: relative;
 }
 
-.sidemenu__menu-item:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
 .sidemenu__menu-item:nth-child(2) {
   background: #ffffff;
   color: #132450;
   font-weight: 600;
+  border-radius: 25px 0 0 25px;
+  position: relative;
+  height: 65px;
+  padding-right: 40px;
+  width: calc(100% + 20px);
 }
 
-.sidemenu__menu-item:nth-child(2)::before { content: none; }
+.sidemenu__menu-item:nth-child(2)::before {
+  content: none;
+}
 
 .sidemenu__menu-item:nth-child(2) > * {
   position: relative;
@@ -88,7 +103,9 @@
   color: #132450;
 }
 
-.sidemenu__menu-item:nth-child(2):hover { background: #ffffff; }
+.sidemenu__menu-item:nth-child(2):hover {
+  background: #ffffff;
+}
 
 .sidemenu__menu-item img {
   width: 25px;
@@ -105,7 +122,7 @@
 }
 
 .sidemenu__menu-item p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   margin: 0;
   color: white;
@@ -130,7 +147,7 @@
 }
 
 .sidemenu__bottom p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0;
   flex: 1;
@@ -149,5 +166,5 @@
 }
 
 .sidemenu__bottom .fullname {
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
