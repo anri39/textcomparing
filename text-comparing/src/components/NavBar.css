@@ -35,3 +35,9 @@
   height: 24px;
   cursor: pointer;
 }
+
+@media (min-width: 1200px) {
+  .navbarcontainer {
+    display: none;
+  }
+}

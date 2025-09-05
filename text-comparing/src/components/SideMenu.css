@@ -6,12 +6,9 @@
   flex-direction: column;
   color: white;
   font-family: "Sylfaen", "DejaVu Sans", sans-serif;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 9999;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   overflow: visible;
+  flex-shrink: 0;
 }
 
 .sidemenu__back-arrow {
@@ -167,4 +164,11 @@
 
 .sidemenu__bottom .fullname {
   font-size: 18px !important;
+}
+
+/* Hide sidebar below 1200px */
+@media (max-width: 1199px) {
+  .sidemenu {
+    display: none !important;
+  }
 }

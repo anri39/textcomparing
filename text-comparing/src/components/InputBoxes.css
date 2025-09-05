@@ -22,7 +22,7 @@
     flex-direction: row;
     align-items: stretch;
     gap: 30px;
-    min-height: 400px;
+    min-height: 600px;
   }
 
   .inputbox {

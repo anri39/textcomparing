@@ -7,13 +7,15 @@ import SideMenu from "./components/SideMenu";
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <SideMenu />
-      <NavBar />
-      <FirstPartDropdown />
-      <LanguageSelection />
-      <InputBoxes />
-    </>
+      <div className="main-content">
+        <NavBar />
+        <FirstPartDropdown />
+        <LanguageSelection />
+        <InputBoxes />
+      </div>
+    </div>
   );
 }
 
